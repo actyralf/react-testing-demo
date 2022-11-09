@@ -1,9 +1,10 @@
 import { useState } from "react";
+import "./Card.css";
 
 export const Card = ({ todo, completed }) => {
   const [color, setColor] = useState("none");
   return (
-    <div>
+    <div className="card">
       <h1
         style={{
           textDecoration: completed ? "line-through" : "none",
